@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+// IMPORT FONTS
+@font-face {
+    font-family: "Butler";
+    src: url("/fonts/Butler_Medium.otf") format("truetype");
+}
+@font-face {
+    font-family: "Gardena Holmes";
+    src: url("/fonts/Gardena Holmes Script.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/montserrat.regular.ttf") format("truetype");
+}
+
+////////////// VARIABLES
+
+// FONTS
+$font-primary: "Butler", sans-serif;
+$font-secondary: "Gardena Holmes", sans-serif;
+$font-tertiary: "Montserrat", sans-serif;
+
+// COLOURS
+$color-primary: "#D0AB82";
+$color-white: "#FFFFFF";
+$color-black: "#000000";
+$color-gray: "#C1C1C1E3";
+
+//////////////
+
+.butler {
+    font-family: $font-primary;
+}
+.gardena {
+    font-family: $font-secondary;
+}
+.montserrat {
+    font-family: $font-tertiary;
+}
