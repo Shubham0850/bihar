@@ -1,0 +1,46 @@
+.cat {
+    &__header {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 100px 0;
+        position: sticky;
+        top: 0;
+    }
+
+    &__card {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        position: sticky;
+        top: 0;
+
+        &__text {
+            width: 100%;
+            height: 100vh;
+            background: rgba($color: #000000, $alpha: 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .h1 {
+            font-size: 100px;
+        }
+        .h2 {
+            margin-top: -55px;
+        }
+
+        &__img {
+            img {
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+            }
+        }
+    }
+}

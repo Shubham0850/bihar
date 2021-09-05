@@ -3,7 +3,7 @@
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 // IMPORT FONTS
@@ -35,12 +35,82 @@ $color-gray: "#C1C1C1E3";
 
 //////////////
 
-.butler {
+// Typography
+
+.h1 {
     font-family: $font-primary;
+    font-style: normal;
+    font-size: 60px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+    background: linear-gradient(to right, #fff 0%, #c1c1c1 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &--dark {
+        background: linear-gradient(to right, #000000 0%, #767676 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: capitalize;
+    }
 }
-.gardena {
+.h2 {
     font-family: $font-secondary;
+    font-size: 64px;
+    font-weight: 400;
+    color: #d0ab82;
+    text-align: right;
+    margin-top: -40px;
 }
-.montserrat {
+.p {
     font-family: $font-tertiary;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+}
+
+// Nav
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+}
+
+#cursor {
+    position: fixed;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid white;
+    transition: all 0.2s;
+    transform: translate3d(0, 0, 0);
+    overflow: hidden;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.2;
+    }
+    30% {
+        opacity: 0.5;
+    }
+    60%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.2;
+    }
 }
