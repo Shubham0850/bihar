@@ -3,9 +3,13 @@
         width: 100%;
         max-width: 1000px;
         margin: 0 auto;
-        padding: 200px 0;
+        padding: 200px 50px;
         position: sticky;
         top: 0;
+
+        @media screen and (max-width: 600px){
+            padding: 150px 25px;
+        }
     }
 
     &__card {
@@ -29,10 +33,19 @@
         }
 
         .h1 {
-            font-size: 100px;
+            font-size: 90px;
         }
         .h2 {
             margin-top: -55px;
+        }
+        @media screen and (max-width: 600px) {
+            .h2 {
+                font-size: 13vw;
+                margin-top: -40px;
+            }
+            .h1{
+                font-size: 16vw;
+            }
         }
 
         &__img {

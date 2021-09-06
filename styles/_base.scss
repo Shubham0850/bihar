@@ -57,7 +57,7 @@ $color-gray: "#C1C1C1E3";
 }
 .h2 {
     font-family: $font-secondary;
-    font-size: 64px;
+    font-size: 55px;
     font-weight: 400;
     color: #d0ab82;
     text-align: right;
@@ -72,7 +72,15 @@ $color-gray: "#C1C1C1E3";
     color: white;
 }
 
-
+@media screen and (max-width: 600px) {
+    .h1 {
+        font-size: 40px;
+    }
+    .h2 {
+        font-size: 25px;
+        margin-top: -12px;
+    }
+}
 
 #cursor {
     z-index: 999;
@@ -84,14 +92,14 @@ $color-gray: "#C1C1C1E3";
     position: absolute;
     transform-origin: 150% 150%;
     pointer-events: none;
-    transition: all .1s;
-   
+    transition: all 0.1s;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.inp{
+.inp {
     font-family: $font-tertiary;
     font-size: 16px;
     background-color: #fff;
@@ -101,7 +109,7 @@ $color-gray: "#C1C1C1E3";
     outline: none;
     border: 1px solid #888;
 }
-.btn{
+.btn {
     width: 100%;
     padding: 15px;
     border: none;
@@ -121,10 +129,10 @@ $color-gray: "#C1C1C1E3";
     30% {
         opacity: 0.5;
     }
-    60%{
+    60% {
         opacity: 1;
     }
-    80%{
+    80% {
         opacity: 0.5;
     }
     100% {

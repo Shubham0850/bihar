@@ -112,19 +112,19 @@ export default function Header() {
           slides={[
             <div key="1">
               <div className="header__text">
-                <h1 className="h1">Jewelry display</h1>
+                <h1 className="h1">Jewelry</h1>
                 <h2 className="h2">Tailor Made</h2>
               </div>
             </div>,
             <div key="2">
               <div className="header__text">
-                <h1 className="h1"> display</h1>
+                <h1 className="h1"> Bridel</h1>
                 <h2 className="h2">Tailor Made</h2>
               </div>
             </div>,
             <div key="3">
               <div className="header__text">
-                <h1 className="h1">Jewelry</h1>
+                <h1 className="h1">In store</h1>
                 <h2 className="h2">Tailor Made</h2>
               </div>
             </div>,

@@ -1,6 +1,7 @@
 .contact{
     width: 100%;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,5 +46,24 @@
     &__form{
         padding: 20px;
         width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .contact{
+        &__form-box{
+            flex-direction: column-reverse;
+        }
+        &__form-details{
+            width: 100%;
+            padding: 5px;
+        }
+        &__form{
+            width: 100%;
+            padding: 5px;
+        }
+        &__heading{
+            margin: 50px 0;
+        }
     }
 }
