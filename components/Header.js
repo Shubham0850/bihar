@@ -16,8 +16,10 @@ function VideoPopUp() {
       <HoverVideoPlayer
         videoSrc="/videos/header-bg.mp4"
         pausedOverlay={
-          <img
+          <Image
             src="/images/f2.png"
+            width={480}
+            height={270}
             alt="cover image"
             style={{
               width: "100%",

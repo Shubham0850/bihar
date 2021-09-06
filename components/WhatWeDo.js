@@ -17,9 +17,10 @@ export default function WhatWeDo() {
           <HoverVideoPlayer
             videoSrc="/videos/f1.mov"
             pausedOverlay={
-              <img
+              <Image
                 src="/images/f1.png"
                 alt="cover image"
+                layout="fill"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -41,9 +42,10 @@ export default function WhatWeDo() {
           <HoverVideoPlayer
             videoSrc="/videos/f2.mov"
             pausedOverlay={
-              <img
+              <Image
                 src="/images/f2.png"
                 alt="cover image"
+                layout="fill"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -65,9 +67,10 @@ export default function WhatWeDo() {
           <HoverVideoPlayer
             videoSrc="/videos/f3.mov"
             pausedOverlay={
-              <img
+              <Image
                 src="/images/f3.png"
                 alt="cover image"
+                layout="fill"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -89,9 +92,10 @@ export default function WhatWeDo() {
            <HoverVideoPlayer
             videoSrc="/videos/f4.mov"
             pausedOverlay={
-              <img
+              <Image
                 src="/images/f4.png"
                 alt="cover image"
+                layout="fill"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -113,9 +117,10 @@ export default function WhatWeDo() {
         <HoverVideoPlayer
             videoSrc="/videos/f5.mov"
             pausedOverlay={
-              <img
+              <Image
                 src="/images/f5.png"
                 alt="cover image"
+                layout="fill"
                 style={{
                   width: "100%",
                   height: "100%",
