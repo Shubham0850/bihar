@@ -1,4 +1,4 @@
-.header{
+.header {
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -8,42 +8,96 @@
     justify-content: center;
     align-items: center;
 
+    &__play-area {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        cursor: none;
+    }
 
-    &__bg-video{
+    &__bg-video {
         width: 100%;
         min-height: 100vh;
-        
+        object-fit: cover;
+
         position: absolute;
         top: 0;
         left: 0;
         z-index: -1;
     }
 
-    &__progress{
+    &__progress {
         width: 100%;
         position: absolute;
         padding: 20px;
         bottom: 0;
         left: 0;
+        z-index: 11;
     }
-    &__progress-box{
+    &__progress-box {
         width: 70%;
         display: flex;
         margin: 30px auto;
     }
-    &__slider-btn{
+    &__slider-btn {
         cursor: pointer;
         width: 33.3%;
         padding: 10px;
         border-bottom: 1px solid white;
         margin: 5px;
-        .p{
-            font-family: $font-primary;
-        }
     }
-    .scroll-text{
+    .scroll-text {
         text-align: center;
         cursor: pointer;
         animation: blink 3s linear infinite;
+    }
+}
+
+.popup {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__close {
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+.video-popup {
+    width: 90vw;
+    height: 90vh;
+    margin: 5vh 5%;
+    overflow: hidden;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+
+    .p {
+        cursor: pointer;
     }
 }

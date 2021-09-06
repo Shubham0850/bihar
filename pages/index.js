@@ -1,9 +1,7 @@
 import Head from "next/head";
-import { useEffect, useState } from "react";
 import Category from "../components/Category";
-import Cursor from "../components/Cursor";
+import Contact from "../components/Contact";
 import Header from "../components/Header";
-import Nav from "../components/Nav";
 import Testimonial from "../components/Testimonial";
 import WhatWeDo from "../components/WhatWeDo";
 
@@ -16,12 +14,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Cursor />
-      <Nav />
       <Header />
       <WhatWeDo />
       <Category />
       <Testimonial />
+      <Contact/>
     </div>
   );
 }

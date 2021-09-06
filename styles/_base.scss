@@ -72,29 +72,46 @@ $color-gray: "#C1C1C1E3";
     color: white;
 }
 
-// Nav
 
-.nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px 30px;
-    position: fixed;
-    top: 0;
-}
 
 #cursor {
-    position: fixed;
-    z-index: 1000;
+    z-index: 999;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: transparent;
     border: 1px solid white;
-    transition: all 0.2s;
-    transform: translate3d(0, 0, 0);
-    overflow: hidden;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    transform-origin: 150% 150%;
+    pointer-events: none;
+    transition: all .1s;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inp{
+    font-family: $font-tertiary;
+    font-size: 16px;
+    background-color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border: 1px solid #888;
+}
+.btn{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-family: $font-tertiary;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #888;
+    margin: 10px 0;
+    cursor: pointer;
 }
 
 @keyframes blink {

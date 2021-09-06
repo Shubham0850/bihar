@@ -1,4 +1,5 @@
 import Image from "next/image";
+import HoverVideoPlayer from "react-hover-video-player";
 import { Fade, Zoom, Flip, Slide } from "react-reveal";
 
 export default function WhatWeDo() {
@@ -13,55 +14,120 @@ export default function WhatWeDo() {
 
       <Zoom left>
         <div className="whatewedo__img f1">
-          <Image
-            src="/images/f1.png"
-            width={405}
-            height={720}
-            alt="whatwedo img"
+          <HoverVideoPlayer
+            videoSrc="/videos/f1.mov"
+            pausedOverlay={
+              <img
+                src="/images/f1.png"
+                alt="cover image"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            }
+            loadingOverlay={
+              <div className="loading-overlay">
+                <div className="loading-spinner" />
+              </div>
+            }
           />
         </div>
       </Zoom>
 
       <Zoom top>
         <div className="whatewedo__img f2">
-          <Image
-            src="/images/f2.png"
-            width={480}
-            height={270}
-            alt="whatwedo img"
+          <HoverVideoPlayer
+            videoSrc="/videos/f2.mov"
+            pausedOverlay={
+              <img
+                src="/images/f2.png"
+                alt="cover image"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            }
+            loadingOverlay={
+              <div className="loading-overlay">
+                <div className="loading-spinner" />
+              </div>
+            }
           />
         </div>
       </Zoom>
 
       <Fade bottom>
         <div className="whatewedo__img f3">
-          <Image
-            src="/images/f3.png"
-            width={375}
-            height={666}
-            alt="whatwedo img"
+          <HoverVideoPlayer
+            videoSrc="/videos/f3.mov"
+            pausedOverlay={
+              <img
+                src="/images/f3.png"
+                alt="cover image"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            }
+            loadingOverlay={
+              <div className="loading-overlay">
+                <div className="loading-spinner" />
+              </div>
+            }
           />
         </div>
       </Fade>
 
       <Fade right>
         <div className="whatewedo__img f4">
-          <Image
-            src="/images/f4.png"
-            width={518}
-            height={291}
-            alt="whatwedo img"
+           <HoverVideoPlayer
+            videoSrc="/videos/f4.mov"
+            pausedOverlay={
+              <img
+                src="/images/f4.png"
+                alt="cover image"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            }
+            loadingOverlay={
+              <div className="loading-overlay">
+                <div className="loading-spinner" />
+              </div>
+            }
           />
         </div>
       </Fade>
 
       <Fade left cascade>
         <div className="whatewedo__img f5">
-          <Image
-            src="/images/f5.png"
-            width={503}
-            height={282}
-            alt="whatwedo img"
+        <HoverVideoPlayer
+            videoSrc="/videos/f5.mov"
+            pausedOverlay={
+              <img
+                src="/images/f5.png"
+                alt="cover image"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            }
+            loadingOverlay={
+              <div className="loading-overlay">
+                <div className="loading-spinner" />
+              </div>
+            }
           />
         </div>
       </Fade>
