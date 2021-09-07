@@ -85,6 +85,8 @@
     height: 90vh;
     margin: 5vh 5%;
     overflow: hidden;
+    object-fit: cover;
+    background-color: #000;
 }
 
 .nav {
@@ -99,5 +101,11 @@
 
     .p {
         cursor: pointer;
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    .nav{
+        align-items: center;
     }
 }

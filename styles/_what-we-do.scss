@@ -1,14 +1,15 @@
-.whatwedo{
+.whatwedo {
     background: #000;
     width: 100%;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(8, 12.5vh);
 
-    &__list{
+    &__list {
         grid-column: 8 / 11;
         grid-row: 5 / 9;
 
@@ -16,50 +17,77 @@
         justify-content: end;
         align-items: center;
 
-        li{
+        li {
             padding: 10px;
             text-align: right;
         }
     }
-    &__heading{
+    &__heading {
         position: absolute;
         top: 100px;
         left: 100px;
         z-index: 10;
 
-        .h2{
+        .h2 {
             text-align: left;
         }
     }
 }
 
-.f1{
+.f1 {
     grid-column: 8 / 11;
     grid-row: 1 / 5;
     overflow: hidden;
-    img{
+    img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 }
-.f2{
+.f2 {
     overflow: hidden;
     grid-column: 14 / 21;
     grid-row: 2 / 5;
 }
-.f3{
+.f3 {
     grid-column: 11 / 14;
     grid-row: 5 / 9;
     overflow: hidden;
 }
-.f4{
+.f4 {
     grid-column: 17 / 21;
     grid-row: 6 / 9;
     overflow: hidden;
 }
-.f5{
+.f5 {
     grid-column: 1 / 7;
     grid-row: 6 / 9;
     overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    .f1 {
+        grid-column: 1 / 9;
+        grid-row: 1 / 5;
+    }
+    .f2 {
+        grid-column: 11 / 21;
+        grid-row: 2 / 4;
+    }
+    .f3 {
+        grid-column: 11 / 21;
+        grid-row: 5 / 9;
+    }
+    .f5{
+        grid-column: 1 / 10;
+        grid-row: 5 / 7;
+    }
+    .f4{
+        grid-column: 1 / 10;
+        grid-row: 5 / 7;
+    }
+    .whatwedo__list{
+        grid-column: 1 / 11;
+        grid-row: 6 / 9;
+    }
 }

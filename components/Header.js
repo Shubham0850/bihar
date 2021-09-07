@@ -17,9 +17,8 @@ function VideoPopUp() {
         videoSrc="/videos/header-bg.mp4"
         pausedOverlay={
           <Image
-            src="/images/f2.png"
-            width={480}
-            height={270}
+            src="/images/cat3.jpeg"
+            layout="fill"
             alt="cover image"
             style={{
               width: "100%",
@@ -65,8 +64,6 @@ export default function Header() {
     cursor.style.top = `${e.pageY}px`;
   }
 
-  function playVideo() {}
-
   return (
     <>
       <nav className="nav">
@@ -79,7 +76,9 @@ export default function Header() {
           Brand Video
         </p>
 
-        <Image src="/logo.png" width={151} height={92} alt="artistry logo" />
+        <div className="logo">
+          <Image src="/logo.png" width={151} height={92} alt="artistry logo" />
+        </div>
 
         <Link href="#contact">
           <p className="p">Contact</p>

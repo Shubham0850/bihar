@@ -1,6 +1,9 @@
 import Image from "next/image";
 import HoverVideoPlayer from "react-hover-video-player";
 import { Fade, Zoom, Flip, Slide } from "react-reveal";
+import config from 'react-reveal/globals';
+
+config({ ssrFadeout: true });
 
 export default function WhatWeDo() {
   return (
