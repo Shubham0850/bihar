@@ -60,7 +60,7 @@ export default function Contact() {
     <div id="contact" className="contact">
       <div className="contact__box">
         <div className="contact__heading">
-          <h1 className="h1">Let's Connect</h1>
+          <h1 className="h1">{`Let's Connect`}</h1>
           <h2 className="h2">Contact</h2>
         </div>
         <div className="contact__form-box">
@@ -119,7 +119,7 @@ export default function Contact() {
                 {isLoading ? "Loading..." : success ? "Submitted" : "Submit"}
               </button>
             </form>
-            <a href="https://wa.me/918709052626" target="_blank">
+            <a rel="noreferrer" href="https://wa.me/918709052626" target="_blank">
               <button className="btn btn--sec">
                 <span className="icon">
                 <Image src={"/wa.svg"} alt="wa icon" width={20} height={20} />
