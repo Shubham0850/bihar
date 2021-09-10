@@ -8,8 +8,13 @@
     background-color: #000;
 
     &__heading{
+        margin-bottom: 50px;
+        
         .h1{
             text-transform: capitalize;
+        }
+        .h2{
+            text-align: left;
         }
     }
 
@@ -26,7 +31,8 @@
 
     &__form-details{
         width: 50%;
-        padding: 20px;
+        padding: 50px;
+        background-color: #111111;
 
         .p{
             margin-bottom: 25px;
@@ -44,8 +50,8 @@
     }
 
     &__form{
-        padding: 20px;
         width: 50%;
+        padding: 0 50px;
     }
 }
 
@@ -56,11 +62,13 @@
         }
         &__form-details{
             width: 100%;
-            padding: 5px;
+            padding: 20px;
+            margin-bottom: 50px;
         }
         &__form{
             width: 100%;
             padding: 5px;
+            margin-bottom: 50px;
         }
         &__heading{
             margin: 50px 0;

@@ -5,12 +5,12 @@ import config from 'react-reveal/globals';
 
 config({ ssrFadeout: true });
 
-export default function WhatWeDo() {
+export default function HowWeDo() {
   return (
     <section id="what-we-do" className="whatwedo">
       <Slide left>
         <div className="whatwedo__heading">
-          <h1 className="h1">What We Do</h1>
+          <h1 className="h1">How We Do</h1>
           <h2 className="h2">Processes</h2>
         </div>
       </Slide>

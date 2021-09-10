@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -14,6 +14,10 @@ html{
 @font-face {
     font-family: "Butler";
     src: url("/fonts/Butler_Medium.otf") format("truetype");
+}
+@font-face {
+    font-family: "Butler-Light";
+    src: url("/fonts/Butler_Light.otf") format("truetype");
 }
 @font-face {
     font-family: "Gardena Holmes";
@@ -30,6 +34,7 @@ html{
 $font-primary: "Butler", sans-serif;
 $font-secondary: "Gardena Holmes", sans-serif;
 $font-tertiary: "Montserrat", sans-serif;
+$font-primary-light: "Butler-Light", sans-sarif;
 
 // COLOURS
 $color-primary: "#D0AB82";
@@ -58,6 +63,9 @@ $color-gray: "#C1C1C1E3";
         -webkit-text-fill-color: transparent;
         text-transform: capitalize;
     }
+    &--light{
+        font-family: $font-primary-light;
+    }
 }
 .h2 {
     font-family: $font-secondary;
@@ -75,7 +83,7 @@ $color-gray: "#C1C1C1E3";
     line-height: 17px;
     color: white;
 }
-.logo{
+.logo {
     width: 150px;
 }
 
@@ -87,7 +95,7 @@ $color-gray: "#C1C1C1E3";
         font-size: 25px;
         margin-top: -12px;
     }
-    .logo{
+    .logo {
         width: 100px;
     }
 }
@@ -109,15 +117,31 @@ $color-gray: "#C1C1C1E3";
     align-items: center;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+a {
+    text-decoration: none;
+}
+
 .inp {
     font-family: $font-tertiary;
     font-size: 16px;
-    background-color: #fff;
+    background-color: transparent;
     width: 100%;
     padding: 15px;
     border: none;
     outline: none;
-    border: 1px solid #888;
+    border: 1px solid #4f4f4f;
+    color: #fff;
 }
 .btn {
     width: 100%;
@@ -125,10 +149,27 @@ $color-gray: "#C1C1C1E3";
     border: none;
     outline: none;
     font-family: $font-tertiary;
-    font-size: 16px;
-    background-color: #fff;
-    border: 1px solid #888;
-    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: transparent;
+    border: 1px solid #4f4f4f;
+    color: #fff;
+    margin-top: 15px;
+    cursor: pointer;
+
+    &--sec {
+        background: linear-gradient(285.34deg, #000000 17.89%, #343434 121.57%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+            margin-right: 10px;
+        }
+    }
+}
+
+.link {
     cursor: pointer;
 }
 

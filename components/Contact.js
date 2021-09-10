@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import Airtable from "airtable";
+import Image from "next/image";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     number: "",
     email: "",
-    message: "",
   });
   const [err, setErr] = useState("");
   const [success, setSuccess] = useState(false);
   const [isLoading, setLoading] = useState(false);
 
-  const { name, number, email, message } = formData;
+  const { name, number, email } = formData;
 
   const handleChange = (e) => {
     let fieldName = e.target.name;
@@ -34,7 +34,6 @@ export default function Contact() {
             Name: name,
             Number: number,
             Email: email,
-            Message: message,
           },
         },
       ],
@@ -51,7 +50,6 @@ export default function Contact() {
             name: "",
             number: "",
             email: "",
-            message: "",
           });
         });
       }
@@ -62,15 +60,15 @@ export default function Contact() {
     <div id="contact" className="contact">
       <div className="contact__box">
         <div className="contact__heading">
-          <h1 className="h1">Contact Us</h1>
+          <h1 className="h1">Let's Connect</h1>
+          <h2 className="h2">Contact</h2>
         </div>
         <div className="contact__form-box">
           <div className="contact__form-details">
             <p className="p">
               {`Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s,`}
+              typesetting industry.`}
               <br />
               <br />
               <em>
@@ -82,54 +80,54 @@ export default function Contact() {
             <p className="sign">shubham raj</p>
           </div>
 
-          <form className="contact__form" onSubmit={sendData}>
-            <input
-              name="name"
-              className="inp"
-              type="text"
-              placeholder="Name"
-              value={name}
-              onChange={(e) => {
-                handleChange(e);
-              }}
-              required
-            />
-            <input
-              name="email"
-              className="inp"
-              type="email"
-              placeholder="Email"
-              value={email}
-              onChange={(e) => {
-                handleChange(e);
-              }}
-              required
-            />
-            <input
-              className="inp"
-              type="number"
-              placeholder="Number"
-              name="number"
-              value={number}
-              onChange={(e) => {
-                handleChange(e);
-              }}
-              required
-            />
-            <textarea
-              name="message"
-              className="inp"
-              type="text"
-              placeholder="Message"
-              value={message}
-              onChange={(e) => {
-                handleChange(e);
-              }}
-            />
-            <button className="btn" type="submit" disabled={isLoading}>
-              {isLoading ? "Loading..." : success ? "Submitted" : "Submit"}
-            </button>
-          </form>
+          <div className="contact__form">
+            <form onSubmit={sendData}>
+              <input
+                name="name"
+                className="inp"
+                type="text"
+                placeholder="Name"
+                value={name}
+                onChange={(e) => {
+                  handleChange(e);
+                }}
+                required
+              />
+              <input
+                name="email"
+                className="inp"
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => {
+                  handleChange(e);
+                }}
+                required
+              />
+              <input
+                className="inp"
+                type="number"
+                placeholder="Number"
+                name="number"
+                value={number}
+                onChange={(e) => {
+                  handleChange(e);
+                }}
+                required
+              />
+              <button className="btn" type="submit" disabled={isLoading}>
+                {isLoading ? "Loading..." : success ? "Submitted" : "Submit"}
+              </button>
+            </form>
+            <a href="https://wa.me/918709052626" target="_blank">
+              <button className="btn btn--sec">
+                <span className="icon">
+                <Image src={"/wa.svg"} alt="wa icon" width={20} height={20} />
+                </span>
+                Message us on WhatsApp
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </div>

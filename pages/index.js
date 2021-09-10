@@ -1,9 +1,10 @@
 import Head from "next/head";
 import Category from "../components/Category";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Testimonial from "../components/Testimonial";
-import WhatWeDo from "../components/WhatWeDo";
+import HowWeDo from "../components/HowWeDo";
 
 export default function Home() {
   // const scrollbar = useRef<BaseScrollbar | null>(null);
@@ -17,10 +18,11 @@ export default function Home() {
           </Head>
 
           <Header />
-          <WhatWeDo />
+          <HowWeDo />
           <Category />
           <Testimonial />
           <Contact />
+          <Footer/>
         </div>
       
   );

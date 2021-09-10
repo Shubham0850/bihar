@@ -2,13 +2,23 @@
     &__header {
         width: 100%;
         max-width: 1000px;
+        min-height: 100vh;
         margin: 0 auto;
         padding: 200px 50px;
         position: sticky;
         top: 0;
 
-        @media screen and (max-width: 600px){
+        @media screen and (max-width: 600px) {
             padding: 150px 25px;
+        }
+
+        .h1 {
+            font-size: 70px;
+            line-height: 90px;
+        }
+
+        .h2 {
+            text-align: left;
         }
     }
 
@@ -43,7 +53,7 @@
                 font-size: 13vw;
                 margin-top: -40px;
             }
-            .h1{
+            .h1 {
                 font-size: 16vw;
             }
         }

@@ -5,7 +5,13 @@ function Header() {
   return (
     <Fade left>
       <div className="cat__header">
-        <h1 className="h1 h1--dark">We Create Stories Through</h1>
+        <h1 className="h1 h1--dark">
+          <span className="h1--light">We Create</span>
+          <br />
+          Visual Stories <span className="h1--light">For Our</span>
+          <br />
+          Customers<span className="h1--light">Through</span>
+        </h1>
         <h3 className="h2">Beautiful & Minimal Designs</h3>
       </div>
     </Fade>

@@ -1,0 +1,121 @@
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background-color: #000;
+
+    &__h3 {
+        font-family: $font-tertiary;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        color: #bdbdbd;
+    }
+    &__p {
+        font-family: $font-tertiary;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #bdbdbd;
+    }
+    &__link {
+        font-family: $font-tertiary;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: #bdbdbd;
+    }
+
+    &__details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__contact {
+            width: 25%;
+
+            &__icon {
+                margin-right: 30px;
+            }
+        }
+        &__gallery {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__img {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+        margin-top: 90px;
+
+        &__copy-right {
+            margin-right: 50px;
+        }
+    }
+
+    &__back-to-top {
+        display: flex;
+        align-items: center;
+
+        .footer__p {
+            margin-left: 20px;
+        }
+    }
+
+    &__rotate {
+        transform: rotate(90deg);
+
+        &--rev {
+            transform: rotate(-90deg);
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        padding: 30px;
+        &__details {
+            flex-direction: column;
+            &__contact {
+                width: 100%;
+                margin-bottom: 50px;
+            }
+            &__gallery {
+                width: 100%;
+                margin-bottom: 50px;
+
+                &__img {
+                    width: 48%;
+                }
+            }
+            &__gallery-box {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        &__rotate {
+            transform: rotate(0deg);
+
+            &--rev {
+                transform: rotate(0deg);
+            }
+        }
+
+        &__links {
+            margin-top: 50px;
+
+            &__copy-right {
+                margin-right: 30px;
+            }
+        }
+    }
+}
