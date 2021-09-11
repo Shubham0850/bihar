@@ -1,0 +1,81 @@
+.side-nav {
+    background-color: #000;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: -50%;
+    z-index: 1000;
+    transform: rotate(-90deg) translateY(48%);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__rotate {
+        // 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vh;
+        padding: 15px 0px;
+        margin: 0;
+    }
+
+    &__links-box {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__close {
+        width: fit-content;
+    }
+    &__links {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__link {
+        margin: 0 20px;
+        cursor: pointer;
+
+        &:hover{
+            .h1{
+                opacity: 1;
+                transition: all 2s;
+            }
+        }
+    }
+
+    &__h3 {
+        font-family: $font-tertiary;
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: capitalize;
+        opacity: 0.6;
+    }
+    &__h4 {
+        font-size: 0px;
+        margin-top: 0px;
+    }
+    &__active {
+        .h1 {
+            font-size: 13px;
+            line-height: 16px;
+            text-transform: capitalize;
+            opacity: 1;
+        }
+        .h2 {
+            font-size: 16px;
+            margin-top: -8px;
+        }
+    }
+}

@@ -5,12 +5,9 @@
         min-height: 100vh;
         margin: 0 auto;
         padding: 200px 50px;
+        overflow: hidden;
         position: sticky;
         top: 0;
-
-        @media screen and (max-width: 600px) {
-            padding: 150px 25px;
-        }
 
         .h1 {
             font-size: 70px;
@@ -19,6 +16,19 @@
 
         .h2 {
             text-align: left;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 150px 25px;
+
+            .h1 {
+                font-size: 35px;
+                line-height: 40px;
+            }
+
+            .h2 {
+                text-align: left;
+            }
         }
     }
 
@@ -54,7 +64,7 @@
                 margin-top: -40px;
             }
             .h1 {
-                font-size: 16vw;
+                font-size: 12vw;
             }
         }
 

@@ -7,7 +7,7 @@ config({ ssrFadeout: true });
 
 export default function HowWeDo() {
   return (
-    <section id="what-we-do" className="whatwedo">
+    <section id="how-we-do" className="whatwedo">
       <Slide left>
         <div className="whatwedo__heading">
           <h1 className="h1">How We Do</h1>

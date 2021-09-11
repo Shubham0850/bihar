@@ -1,8 +1,19 @@
+.cursor-box {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    cursor: url("/play-cursor.svg"), auto;
+    cursor: url("/play-cursor.svg") 15 15, move;
+}
 .header {
     width: 100%;
     height: 100vh;
     overflow: hidden;
     position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
 
     display: flex;
     justify-content: center;
@@ -59,6 +70,7 @@
 .popup {
     width: 100%;
     height: 100vh;
+
     position: fixed;
     top: 0;
     left: 0;
@@ -78,15 +90,17 @@
         top: 0;
         left: 0;
         z-index: -1;
+        cursor: pointer;
     }
 }
 .video-popup {
-    width: 90vw;
-    height: 90vh;
-    margin: 5vh 5%;
+    width: fit-content;
+    height: auto;
     overflow: hidden;
     object-fit: cover;
     background-color: #000;
+    width: 90%;
+    margin: auto;
 }
 
 .nav {
@@ -104,8 +118,8 @@
     }
 }
 
-@media  screen and (max-width: 600px) {
-    .nav{
+@media screen and (max-width: 600px) {
+    .nav {
         align-items: center;
     }
 }

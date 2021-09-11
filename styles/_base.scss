@@ -44,6 +44,11 @@ $color-gray: "#C1C1C1E3";
 
 //////////////
 
+body {
+    overflow: auto;
+    direction: ltr;
+}
+
 // Typography
 
 .h1 {
@@ -63,7 +68,7 @@ $color-gray: "#C1C1C1E3";
         -webkit-text-fill-color: transparent;
         text-transform: capitalize;
     }
-    &--light{
+    &--light {
         font-family: $font-primary-light;
     }
 }
@@ -86,6 +91,31 @@ $color-gray: "#C1C1C1E3";
 .logo {
     width: 150px;
 }
+
+// //// scrollbar
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #D0AB82;
+    transition: all .2s;
+
+    &:hover{
+        background: #be9566;
+    }
+}
+
+
+//////
 
 @media screen and (max-width: 600px) {
     .h1 {
