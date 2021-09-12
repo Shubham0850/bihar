@@ -3,18 +3,20 @@ import { Fade } from "react-reveal";
 
 function Header() {
   return (
-    <Fade left>
-      <div className="cat__header">
-        <h1 className="h1 h1--dark">
-          <span className="h1--light">We Create</span>
-          <br />
-          Visual Stories <span className="h1--light">For Our</span>
-          <br />
-          Customers<span className="h1--light">Through</span>
-        </h1>
-        <h3 className="h2">Beautiful & Minimal Designs</h3>
+    <div className="cat__header">
+      <div className="cat__header-box">
+        <Fade bottom>
+          <h1 className="h1 h1--dark">
+            <span className="h1--light">We Create</span>
+            <br />
+            Visual Stories <span className="h1--light">For Our</span>
+            <br />
+            Customers <span className="h1--light">Through</span>
+          </h1>
+          <h3 className="h2">Beautiful & Minimal Designs</h3>
+        </Fade>
       </div>
-    </Fade>
+    </div>
   );
 }
 
@@ -22,7 +24,13 @@ function Card(props) {
   return (
     <div className="cat__card">
       <div className="cat__card__img">
-        <Image src={props.bgImgSrc} alt="feature" width={1515} height={1010} />
+        <Image
+          src={props.bgImgSrc}
+          alt="feature"
+          width={1515}
+          height={1010}
+          priority={true}
+        />
       </div>
       <div className="cat__card__text">
         <div>

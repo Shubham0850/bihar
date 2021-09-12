@@ -4,10 +4,14 @@
         max-width: 1000px;
         min-height: 100vh;
         margin: 0 auto;
-        padding: 200px 50px;
         overflow: hidden;
         position: sticky;
         top: 0;
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .h1 {
             font-size: 70px;

@@ -65,11 +65,6 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@brainhubeu/react-carousel@^2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@brainhubeu/react-carousel/-/react-carousel-2.0.4.tgz#9b3d3e9699fca1617530e4cd242d6ef99a671917"
-  integrity sha512-FeN4IL0xg2Ld2YC7zk2asnIbECfsaV9ryiHE3KaDRy3VRPKhAdwAcsrUR4u0lzFMghzGIwtrnIfMnYjczwjAdg==
-
 "@eslint/eslintrc@^0.4.3":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.4.3.tgz#9e42981ef035beb3dd49add17acb96e8ff6f394c"

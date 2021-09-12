@@ -6,7 +6,7 @@
     left: 0;
     z-index: 10;
     cursor: url("/play-cursor.svg"), auto;
-    cursor: url("/play-cursor.svg") 15 15, move;
+    cursor: url("/play-cursor.svg") 15 15, auto;
 }
 .header {
     width: 100%;
@@ -41,24 +41,26 @@
     }
 
     &__progress {
-        width: 100%;
+        width: 70vw;
         position: absolute;
-        padding: 20px;
         bottom: 0;
         left: 0;
         z-index: 11;
+        margin: 0px 15vw 30px 15vw;
     }
     &__progress-box {
-        width: 70%;
+        width: 70vw;
         display: flex;
-        margin: 30px auto;
+        margin-bottom: 30px;
     }
     &__slider-btn {
         cursor: pointer;
         width: 33.3%;
         padding: 10px;
+        border: none;
         border-bottom: 1px solid white;
         margin: 5px;
+        background: transparent;
     }
     .scroll-text {
         text-align: center;

@@ -15,7 +15,7 @@ export default function HowWeDo() {
         </div>
       </Slide>
 
-      <Zoom left>
+      <Fade bottom cascade>
         <div className="whatewedo__img f1">
           <HoverVideoPlayer
             videoSrc="/videos/f1.mov"
@@ -38,9 +38,9 @@ export default function HowWeDo() {
             }
           />
         </div>
-      </Zoom>
+      </Fade>
 
-      <Zoom top>
+      <Fade right cascade>
         <div className="whatewedo__img f2">
           <HoverVideoPlayer
             videoSrc="/videos/f2.mov"
@@ -63,9 +63,9 @@ export default function HowWeDo() {
             }
           />
         </div>
-      </Zoom>
+      </Fade>
 
-      <Fade bottom>
+      <Fade bottom cascade>
         <div className="whatewedo__img f3">
           <HoverVideoPlayer
             videoSrc="/videos/f3.mov"
@@ -90,7 +90,7 @@ export default function HowWeDo() {
         </div>
       </Fade>
 
-      <Fade right>
+      <Fade right cascade>
         <div className="whatewedo__img f4">
            <HoverVideoPlayer
             videoSrc="/videos/f4.mov"

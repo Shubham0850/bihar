@@ -1,15 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { Tab } from "@headlessui/react";
 import dynamic from "next/dynamic";
-import "@brainhubeu/react-carousel/lib/style.css";
-import { autoplayPlugin } from "@brainhubeu/react-carousel";
 import HoverVideoPlayer from "react-hover-video-player";
 import SideNav from "./SideNav";
-
-const Carousel = dynamic(() => import("@brainhubeu/react-carousel"), {
-  ssr: false,
-});
 
 function VideoPopUp() {
   return (
@@ -32,7 +27,7 @@ export default function Header() {
     <div>
       <nav className="nav">
         <a href="#side-nav">
-        <p className="p">Menu</p>
+          <p className="p">Menu</p>
         </a>
 
         <div className="logo">
@@ -64,7 +59,39 @@ export default function Header() {
       )}
 
       <div className="header">
-        <div className="header__progress">
+        <Tab.Group>
+          <div className="header__slider">
+            <div className="header__progress">
+              <Tab.List className="header__progress-box">
+                <Tab className="header__slider-btn"></Tab>
+                <Tab className="header__slider-btn">
+                  <p className="p"></p>
+                </Tab>
+                <Tab className="header__slider-btn">
+                  <p className="p"></p>
+                </Tab>
+              </Tab.List>
+              <Link href="#how-we-do">
+                <p className="p scroll-text">Scroll down to see more</p>
+              </Link>
+            </div>
+            <Tab.Panels className="header__tab">
+              <Tab.Panel>
+                <h1 className="h1">JEWELRY DISPLAY</h1>
+                <h2 className="h2">Tailor Made</h2>
+              </Tab.Panel>
+              <Tab.Panel>
+                <h1 className="h1">JEWELRY DISPLAY2</h1>
+                <h2 className="h2">Tailor Made</h2>
+              </Tab.Panel>
+              <Tab.Panel>
+                <h1 className="h1">JEWELRY DISPLAY3</h1>
+                <h2 className="h2">Tailor Made</h2>
+              </Tab.Panel>
+            </Tab.Panels>
+          </div>
+        </Tab.Group>
+        {/* <div className="header__progress">
           <div className="header__progress-box">
             <div className="header__slider-btn">
               <p className="p"></p>
@@ -77,17 +104,12 @@ export default function Header() {
             <div className="header__slider-btn">
               <p className="p"></p>
             </div>
-          </div>
-
-          <Link href="#what-we-do">
-            <p className="p scroll-text">Scroll down to see more</p>
-          </Link>
-        </div>
-
-        <video className="header__bg-video" autoPlay loop muted>
-          <source src={videoSrc} type="video/mp4" />
-        </video>
+          </div> */}
       </div>
+
+      <video className="header__bg-video" poster="/images/f4.png" autoPlay loop muted>
+        <source src={videoSrc} type="video/mp4" />
+      </video>
     </div>
   );
 }

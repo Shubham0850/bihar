@@ -35,6 +35,7 @@ export default function Footer() {
                 alt="artistry gallery image"
                 width={182}
                 height={124}
+                priority={true} 
               />
             </span>
 
@@ -44,6 +45,7 @@ export default function Footer() {
                 alt="artistry gallery image"
                 width={182}
                 height={124}
+                priority={true} 
               />
             </span>
 
@@ -53,6 +55,7 @@ export default function Footer() {
                 alt="artistry gallery image"
                 width={182}
                 height={124}
+                priority={true} 
               />
             </span>
 
@@ -62,6 +65,7 @@ export default function Footer() {
                 alt="artistry gallery image"
                 width={182}
                 height={124}
+                priority={true} 
               />
             </span>
             <span className="footer__details__gallery__img">
@@ -70,6 +74,7 @@ export default function Footer() {
                 alt="artistry gallery image"
                 width={182}
                 height={124}
+                priority={true} 
               />
             </span>
 
@@ -79,6 +84,7 @@ export default function Footer() {
                 alt="artistry gallery image"
                 width={182}
                 height={124}
+                priority={true} 
               />
             </span>
           </div>

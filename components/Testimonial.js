@@ -17,6 +17,7 @@ function Review(props) {
           width={983}
           height={655}
           alt="testimonial"
+          priority={true} 
         />
       </div>
     </div>
@@ -44,6 +45,7 @@ export default function Testimonial() {
                   width={320}
                   height={320}
                   alt="logo"
+
                 />
               </Tab>
               <Tab
