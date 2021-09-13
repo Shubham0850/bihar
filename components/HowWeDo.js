@@ -24,6 +24,7 @@ export default function HowWeDo() {
                 src="/images/f1.png"
                 alt="cover image"
                 layout="fill"
+                priority={true} 
                 style={{
                   width: "100%",
                   height: "100%",
@@ -49,6 +50,7 @@ export default function HowWeDo() {
                 src="/images/f2.png"
                 alt="cover image"
                 layout="fill"
+                priority={true} 
                 style={{
                   width: "100%",
                   height: "100%",
@@ -74,6 +76,7 @@ export default function HowWeDo() {
                 src="/images/f3.png"
                 alt="cover image"
                 layout="fill"
+                priority={true} 
                 style={{
                   width: "100%",
                   height: "100%",
@@ -99,6 +102,7 @@ export default function HowWeDo() {
                 src="/images/f4.png"
                 alt="cover image"
                 layout="fill"
+                priority={true} 
                 style={{
                   width: "100%",
                   height: "100%",
@@ -124,6 +128,7 @@ export default function HowWeDo() {
                 src="/images/f5.png"
                 alt="cover image"
                 layout="fill"
+                priority={true} 
                 style={{
                   width: "100%",
                   height: "100%",

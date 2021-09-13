@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Review(props) {
   return (
-    <div className="testimonial__review">
+    <div className="testimonial__review" >
       <div className="testimonial__review__text">
         <div>
           <p className="p">{props.review}</p>
@@ -26,7 +26,7 @@ function Review(props) {
 
 export default function Testimonial() {
   return (
-    <section className="testimonial">
+    <section className="testimonial" id="what-they-say">
       <div className="testimonial__box">
         <Tab.Group>
           <Tab.List className="tab-list">

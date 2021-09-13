@@ -4,6 +4,8 @@
     padding: 50px;
     background-color: #000;
 
+    border-top: 1px solid #4d4d4d;
+
     &__h3 {
         font-family: $font-tertiary;
         font-style: normal;
@@ -71,6 +73,7 @@
     &__back-to-top {
         display: flex;
         align-items: center;
+        cursor: pointer;
 
         .footer__p {
             margin-left: 20px;

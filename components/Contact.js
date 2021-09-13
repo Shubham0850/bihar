@@ -122,7 +122,7 @@ export default function Contact() {
             <a rel="noreferrer" href="https://wa.me/918709052626" target="_blank">
               <button className="btn btn--sec">
                 <span className="icon">
-                <Image src={"/wa.svg"} alt="wa icon" width={20} height={20} />
+                <Image src={"/wa.svg"} alt="wa icon" width={20} height={20} priority={true}/>
                 </span>
                 Message us on WhatsApp
               </button>

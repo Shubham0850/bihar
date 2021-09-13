@@ -2,11 +2,21 @@
     background-color: #000;
     width: 100%;
 
+    // position: fixed;
+    // top: 0;
+    // left: -50%;
+    // z-index: 1000;
+    // transform: rotate(-90deg) translateY(48%);
+
+   
+    transform-origin: left top;
+    transform: rotate(-90deg) translateX(-100%);
+    width: 100vh;
+    height: auto;
+
     position: fixed;
     top: 0;
-    left: -50%;
     z-index: 1000;
-    transform: rotate(-90deg) translateY(48%);
 
     opacity: 0;
     visibility: hidden;
@@ -18,17 +28,15 @@
     }
 
     &__rotate {
-        // 
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 100vh;
         padding: 15px 0px;
         margin: 0;
     }
 
     &__links-box {
-        width: 95%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -47,8 +55,8 @@
         margin: 0 20px;
         cursor: pointer;
 
-        &:hover{
-            .h1{
+        &:hover {
+            .h1 {
                 opacity: 1;
                 transition: all 2s;
             }

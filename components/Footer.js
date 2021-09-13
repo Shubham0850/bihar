@@ -13,9 +13,9 @@ export default function Footer() {
             Mumbai 400064, Maharashtra, India
           </p>
           <br />
-          <p className="footer__p">sales@artistryinc.in</p>
+          <a href="mailto:sales@artistryinc.in"><p className="footer__p">sales@artistryinc.in</p></a>
           <br />
-          <p className="footer__p">022 2888 7779</p>
+          <a href="mob:9102228887779"> <p className="footer__p">022 2888 7779</p></a>
           <br />
 
           <div className="footer__details__social">
@@ -89,10 +89,10 @@ export default function Footer() {
             </span>
           </div>
         </div>
-        <Link href="#" className="link">
+        <Link href="/" className="link">
           <div className="footer__back-to-top footer__rotate">
             <span className="footer__rotate--rev">
-              <Image src="/up.png" alt="top icon" width={40} height={40} />
+              <Image src="/up.png" alt="top icon" width={40} height={40} priority={true}/>
             </span>
             <span>
               <p className="footer__p "> Back to Top</p>
@@ -105,8 +105,8 @@ export default function Footer() {
         <div className="footer__links__copy-right">
           <p className="footer__link">Copyright &#169; Artistry Inc. 2015</p>
         </div>
-        <Link href="" className="link">
-          <div className="footer__links__terms">
+        <Link href="/" className="link">
+          <div className="footer__links__terms link">
             <p className="footer__link">Terms & Conditions</p>
           </div>
         </Link>

@@ -44,7 +44,7 @@ function Card(props) {
 
 export default function Category() {
   return (
-    <div className="cat">
+    <div className="cat" id="what-we-do">
       <Header />
       <Card
         bgImgSrc="/images/cat1.jpeg"
