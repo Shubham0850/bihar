@@ -5,9 +5,14 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Testimonial from "../components/Testimonial";
 import HowWeDo from "../components/HowWeDo";
-import SideNav from "../components/SideNav";
+
+
 
 export default function Home() {
+
+  
+
+  
   return (
     
         <div className="home">
@@ -17,13 +22,16 @@ export default function Home() {
             <link rel="icon" href="/favicon.ico" />
           </Head>
 
-          <SideNav />
+
+
+          
           <Header />
           <HowWeDo />
           <Category />
           <Testimonial />
           <Contact />
           <Footer/>
+          
         </div>
       
   );

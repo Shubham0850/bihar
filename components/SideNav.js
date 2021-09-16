@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-export default function SideNav() {
+
+export default function SideNav(props) {
   const router = useRouter();
-  console.log(router);
   return (
     <nav className="side-nav" id="side-nav">
       <div className="side-nav__rotate">
@@ -23,18 +23,7 @@ export default function SideNav() {
               </span>
             </Link>
 
-            <Link href="#how-we-do">
-              <span
-                className={
-                  router.asPath == "/#how-we-do"
-                    ? "side-nav__link side-nav__active"
-                    : "side-nav__link"
-                }
-              >
-                <h3 className="h1 side-nav__h3">How We Do</h3>
-                <h4 className="h2 side-nav__h4">Brand Video</h4>
-              </span>
-            </Link>
+            
 
             <Link href="#what-we-do">
               <span
@@ -45,6 +34,20 @@ export default function SideNav() {
                 }
               >
                 <h3 className="h1 side-nav__h3">What We Do</h3>
+                <h4 className="h2 side-nav__h4">Brand Video</h4>
+              </span>
+            </Link>
+
+
+            <Link href="#how-we-do">
+              <span
+                className={
+                  router.asPath == "/#how-we-do"
+                    ? "side-nav__link side-nav__active"
+                    : "side-nav__link"
+                }
+              >
+                <h3 className="h1 side-nav__h3">How We Do</h3>
                 <h4 className="h2 side-nav__h4">Brand Video</h4>
               </span>
             </Link>
@@ -65,11 +68,11 @@ export default function SideNav() {
             </Link>
           </div>
         </div>
-        <a href={`${router.asPath}`}>
+        <Link href={`${router.asPath}`}>
           <div className="side-nav__close">
             <Image src="/cross.svg" width={25} height={25} alt="cross icon" />
           </div>
-        </a>
+        </Link>
       </div>
     </nav>
   );

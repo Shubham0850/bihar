@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Tab } from "@headlessui/react";
+import SideNav from "../components/SideNav";
 
 function VideoPopUp() {
   return (
@@ -15,8 +16,28 @@ function VideoPopUp() {
 }
 
 export default function Header() {
+
+  useEffect(() => {
+    // When the user scrolls the page, execute myFunction
+   window.onscroll = function () {
+     scrollIndicator();
+   };
+   
+   function scrollIndicator() {
+     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+     const scrolled = (winScroll / height) * 100;
+     const screenHeiight = screen.height;
+     document.getElementById("scrollBar").style.height = scrolled + "%";
+   }
+ }, []);
+
   const [videoPopup, setVideoPopup] = useState(false);
   const [progress, setProgress] = useState(0);
+
+  const [isSidebarOpen, setSidebar] = useState(false);
+
+  
 
   // useEffect(() => {
 
@@ -29,10 +50,17 @@ export default function Header() {
   //   }, 500);
   // }
 
+  function toggleSidebar(){
+    isSidebarOpen = !isSidebarOpen;
+    setSidebar(isSidebarOpen);
+  }
+
   return (
     <div>
+      <SideNav toggle={isSidebarOpen} />
+      <a href="#side-nav" id="scrollBar"></a>
       <nav className="nav">
-        <a href="#side-nav">
+        <a href="javascript:;" onClick={toggleSidebar}>
           <p className="p">Menu</p>
         </a>
 
@@ -44,6 +72,8 @@ export default function Header() {
           <p className="p">{"Let's Talk"}</p>
         </Link>
       </nav>
+
+      
 
       <div
         className="cursor-box"

@@ -46,23 +46,6 @@ export default function Category() {
   return (
     <div className="cat" id="what-we-do">
       <Header />
-      <Card
-        bgImgSrc="/images/cat1.jpeg"
-        heading="bridle"
-        subHeading="Tailor Made"
-      />
-
-      <Card
-        bgImgSrc="/images/cat2.jpeg"
-        heading="IN STORE"
-        subHeading="Tailor Made"
-      />
-
-      <Card
-        bgImgSrc="/images/cat3.jpeg"
-        heading="WINDOW"
-        subHeading="Tailor Made"
-      />
     </div>
   );
 }
