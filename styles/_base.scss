@@ -93,23 +93,9 @@ body {
 }
 
 // //// scrollbar
-
-/* width 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 0;
 }
-::-webkit-scrollbar-track {
-    background: #000;
-}
-::-webkit-scrollbar-thumb {
-    background: #D0AB82;
-    transition: all .2s;
-
-    &:hover{
-        background: #be9566;
-    }
-}
-*/
 
 #scrollBar{
     position: fixed;

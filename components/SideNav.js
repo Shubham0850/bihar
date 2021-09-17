@@ -2,8 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-
-export default function SideNav(props) {
+export default function SideNav({ setToggle }) {
   const router = useRouter();
   return (
     <nav className="side-nav" id="side-nav">
@@ -23,8 +22,6 @@ export default function SideNav(props) {
               </span>
             </Link>
 
-            
-
             <Link href="#what-we-do">
               <span
                 className={
@@ -38,7 +35,6 @@ export default function SideNav(props) {
               </span>
             </Link>
 
-
             <Link href="#how-we-do">
               <span
                 className={
@@ -51,8 +47,6 @@ export default function SideNav(props) {
                 <h4 className="h2 side-nav__h4">Brand Video</h4>
               </span>
             </Link>
-
-            
 
             <Link href="#">
               <span
@@ -68,11 +62,14 @@ export default function SideNav(props) {
             </Link>
           </div>
         </div>
-        <Link href={`${router.asPath}`}>
-          <div className="side-nav__close">
-            <Image src="/cross.svg" width={25} height={25} alt="cross icon" />
-          </div>
-        </Link>
+        <div
+          className="side-nav__close link"
+          onClick={() => {
+            setToggle(false);
+          }}
+        >
+          <Image src="/cross.svg" width={25} height={25} alt="cross icon" />
+        </div>
       </div>
     </nav>
   );

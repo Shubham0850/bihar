@@ -16,53 +16,43 @@ function VideoPopUp() {
 }
 
 export default function Header() {
+  const [videoPopup, setVideoPopup] = useState(false);
+  const [isSidebarOpen, setSidebar] = useState(false);
 
   useEffect(() => {
     // When the user scrolls the page, execute myFunction
-   window.onscroll = function () {
-     scrollIndicator();
-   };
-   
-   function scrollIndicator() {
-     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-     const scrolled = (winScroll / height) * 100;
-     const screenHeiight = screen.height;
-     document.getElementById("scrollBar").style.height = scrolled + "%";
-   }
- }, []);
+    window.onscroll = function () {
+      scrollIndicator();
+    };
 
-  const [videoPopup, setVideoPopup] = useState(false);
-  const [progress, setProgress] = useState(0);
+    function scrollIndicator() {
+      const winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      const height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      const screenHeiight = screen.height;
+      document.getElementById("scrollBar").style.height = scrolled + "%";
+    }
+  }, []);
 
-  const [isSidebarOpen, setSidebar] = useState(false);
-
-  
-
-  // useEffect(() => {
-
-  // });
-  // while (progress < 100) {
-  //   setTimeout(function () {
-  //     for (let i = 0; i <= 100; i++) {
-  //       setProgress(i++);
-  //     }
-  //   }, 500);
-  // }
-
-  function toggleSidebar(){
-    isSidebarOpen = !isSidebarOpen;
-    setSidebar(isSidebarOpen);
-  }
+ 
 
   return (
     <div>
-      <SideNav toggle={isSidebarOpen} />
+      {isSidebarOpen && (
+        <SideNav toggle={isSidebarOpen} setToggle={setSidebar} />
+      )}
       <a href="#side-nav" id="scrollBar"></a>
       <nav className="nav">
-        <a href="javascript:;" onClick={toggleSidebar}>
+        <span
+          onClick={() => {
+            setSidebar(true);
+          }}
+        >
           <p className="p">Menu</p>
-        </a>
+        </span>
 
         <div className="logo">
           <Image src="/logo.png" width={151} height={92} alt="artistry logo" />
@@ -72,8 +62,6 @@ export default function Header() {
           <p className="p">{"Let's Talk"}</p>
         </Link>
       </nav>
-
-      
 
       <div
         className="cursor-box"
@@ -123,11 +111,6 @@ export default function Header() {
                   }
                 >
                   <p className="p"></p>
-                  <progress
-                    className="progress"
-                    value={progress}
-                    max="100"
-                  ></progress>
                 </Tab>
               </Tab.List>
               <Link href="#how-we-do">
@@ -142,11 +125,15 @@ export default function Header() {
                 <h2 className="h2">Tailor Made</h2>
               </Tab.Panel>
               <Tab.Panel className="header__text-animation">
-                <h1 className="h1"> <span>JEWELRY</span> <span>DISPLAY2</span></h1>
+                <h1 className="h1">
+                  <span>JEWELRY</span> <span>DISPLAY2</span>
+                </h1>
                 <h2 className="h2">Tailor Made</h2>
               </Tab.Panel>
               <Tab.Panel className="header__text-animation">
-                <h1 className="h1"> <span>JEWELRY</span> <span>DISPLAY3</span></h1>
+                <h1 className="h1">
+                  <span>JEWELRY</span> <span>DISPLAY3</span>
+                </h1>
                 <h2 className="h2">Tailor Made</h2>
               </Tab.Panel>
             </Tab.Panels>

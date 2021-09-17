@@ -1,7 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Footer() {
+  useEffect(() => {
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  }, []);
+  function scrollTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
   return (
     <footer className="footer">
       <div className="footer__details">
@@ -13,9 +28,14 @@ export default function Footer() {
             Mumbai 400064, Maharashtra, India
           </p>
           <br />
-          <a href="mailto:sales@artistryinc.in"><p className="footer__p">sales@artistryinc.in</p></a>
+          <a href="mailto:sales@artistryinc.in">
+            <p className="footer__p">sales@artistryinc.in</p>
+          </a>
           <br />
-          <a href="mob:9102228887779"> <p className="footer__p">022 2888 7779</p></a>
+          <a href="mob:9102228887779">
+            {" "}
+            <p className="footer__p">022 2888 7779</p>
+          </a>
           <br />
 
           <div className="footer__details__social">
@@ -35,7 +55,7 @@ export default function Footer() {
                 alt="artistry gallery image"
                 width={182}
                 height={124}
-                priority={true} 
+                priority={true}
               />
             </span>
 
@@ -45,7 +65,7 @@ export default function Footer() {
                 alt="artistry gallery image"
                 width={182}
                 height={124}
-                priority={true} 
+                priority={true}
               />
             </span>
 
@@ -55,7 +75,7 @@ export default function Footer() {
                 alt="artistry gallery image"
                 width={182}
                 height={124}
-                priority={true} 
+                priority={true}
               />
             </span>
 
@@ -65,7 +85,7 @@ export default function Footer() {
                 alt="artistry gallery image"
                 width={182}
                 height={124}
-                priority={true} 
+                priority={true}
               />
             </span>
             <span className="footer__details__gallery__img">
@@ -74,7 +94,7 @@ export default function Footer() {
                 alt="artistry gallery image"
                 width={182}
                 height={124}
-                priority={true} 
+                priority={true}
               />
             </span>
 
@@ -84,21 +104,28 @@ export default function Footer() {
                 alt="artistry gallery image"
                 width={182}
                 height={124}
-                priority={true} 
+                priority={true}
               />
             </span>
           </div>
         </div>
-        <Link href="/" className="link">
-          <div className="footer__back-to-top footer__rotate">
-            <span className="footer__rotate--rev">
-              <Image src="/up.png" alt="top icon" width={40} height={40} priority={true}/>
-            </span>
-            <span>
-              <p className="footer__p "> Back to Top</p>
-            </span>
-          </div>
-        </Link>
+        <div
+          className="footer__back-to-top footer__rotate link"
+          onClick={scrollTop}
+        >
+          <span className="footer__rotate--rev">
+            <Image
+              src="/up.png"
+              alt="top icon"
+              width={40}
+              height={40}
+              priority={true}
+            />
+          </span>
+          <span>
+            <p className="footer__p "> Back to Top</p>
+          </span>
+        </div>
       </div>
 
       <div className="footer__links">

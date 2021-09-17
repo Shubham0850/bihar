@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Review(props) {
   return (
-    <div className="testimonial__review" >
+    <div className="testimonial__review">
       <div className="testimonial__review__text">
         <div>
           <p className="p">{props.review}</p>
@@ -17,7 +17,7 @@ function Review(props) {
           width={983}
           height={655}
           alt="testimonial"
-          priority={true} 
+          priority={true}
         />
       </div>
     </div>
@@ -45,7 +45,7 @@ export default function Testimonial() {
                   width={320}
                   height={320}
                   alt="logo"
-
+                  priority={true}
                 />
               </Tab>
               <Tab
@@ -58,6 +58,7 @@ export default function Testimonial() {
                   width={196}
                   height={84}
                   alt="logo"
+                  priority={true}
                 />
               </Tab>
               <Tab
@@ -70,6 +71,7 @@ export default function Testimonial() {
                   width={167}
                   height={65}
                   alt="logo"
+                  priority={true}
                 />
               </Tab>
               <Tab
@@ -82,6 +84,7 @@ export default function Testimonial() {
                   width={235}
                   height={201}
                   alt="logo"
+                  priority={true}
                 />
               </Tab>
             </div>
