@@ -15,6 +15,7 @@ function VideoPopUp() {
   );
 }
 
+
 export default function Header() {
   const [videoPopup, setVideoPopup] = useState(false);
   const [isSidebarOpen, setSidebar] = useState(false);
