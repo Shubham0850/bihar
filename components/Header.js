@@ -7,7 +7,7 @@ import SideNav from "../components/SideNav";
 function VideoPopUp() {
   return (
     <div className="video-popup">
-      <video width="100%" controls>
+      <video width="100%" controls autoPlay>
         <source src="/videos/header-bg.mp4" type="video/mp4" />
         <p>Your browser does not support HTML video.</p>
       </video>
@@ -141,14 +141,8 @@ export default function Header() {
         </Tab.Group>
       </div>
 
-      <video
-        className="header__bg-video"
-        poster="/images/f4.png"
-        autoPlay
-        loop
-        muted
-      >
-        <source src={"/videos/header-bg.mp4"} type="video/mp4" />
+      <video className="header__bg-video" autoPlay loop muted playsInline>
+        <source src={"/videos/banner-video.mp4"} type="video/mp4" />
       </video>
     </div>
   );

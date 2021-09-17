@@ -76,8 +76,8 @@ export default function Contact() {
                 to make a type specimen book. It has survived not"`}
               </em>
             </p>
-            <h4 className="name h4">Shubham Raj</h4>
-            <p className="sign">shubham raj</p>
+            <h4 className="name h4">Abhijit M.Prajapati</h4>
+            <p className="sign">Artistry Inc</p>
           </div>
 
           <div className="contact__form">

@@ -32,12 +32,7 @@ export default function Footer() {
             <p className="footer__p">sales@artistryinc.in</p>
           </a>
           <br />
-          <a href="mob:9102228887779">
-            {" "}
-            <p className="footer__p">022 2888 7779</p>
-          </a>
-          <br />
-
+          
           <div className="footer__details__social">
             <a href="#" className="footer__details__contact__icon">
               <Image src="/fb.png" alt="fb icon" width={45} height={45} />
@@ -132,11 +127,6 @@ export default function Footer() {
         <div className="footer__links__copy-right">
           <p className="footer__link">Copyright &#169; Artistry Inc. 2015</p>
         </div>
-        <Link href="/" className="link">
-          <div className="footer__links__terms link">
-            <p className="footer__link">Terms & Conditions</p>
-          </div>
-        </Link>
       </div>
     </footer>
   );

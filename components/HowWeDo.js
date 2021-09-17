@@ -25,11 +25,6 @@ export default function HowWeDo() {
                 alt="cover image"
                 layout="fill"
                 priority={true} 
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                }}
               />
             }
             loadingOverlay={
@@ -51,11 +46,6 @@ export default function HowWeDo() {
                 alt="cover image"
                 layout="fill"
                 priority={true} 
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                }}
               />
             }
             loadingOverlay={
@@ -77,11 +67,6 @@ export default function HowWeDo() {
                 alt="cover image"
                 layout="fill"
                 priority={true} 
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                }}
               />
             }
             loadingOverlay={
@@ -103,11 +88,6 @@ export default function HowWeDo() {
                 alt="cover image"
                 layout="fill"
                 priority={true} 
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                }}
               />
             }
             loadingOverlay={
@@ -128,12 +108,7 @@ export default function HowWeDo() {
                 src="/images/f5.png"
                 alt="cover image"
                 layout="fill"
-                priority={true} 
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                }}
+                priority={true}
               />
             }
             loadingOverlay={

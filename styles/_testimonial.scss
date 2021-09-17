@@ -8,8 +8,9 @@
     align-items: center;
 
     &__box {
-        width: 90%;
-        max-width: 1200px;
+        // width: 90%;
+        // max-width: 1200px;
+        width: calc(100% - 180px);
     }
 
     &__review {
