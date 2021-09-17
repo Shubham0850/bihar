@@ -74,56 +74,28 @@ export default function Testimonial() {
                   priority={true}
                 />
               </Tab>
-              <Tab
-                className={({ selected }) =>
-                  selected ? "tab-menu tab-selected" : "tab-menu"
-                }
-              >
-                <Image
-                  src="/images/company/comet.png"
-                  width={235}
-                  height={201}
-                  alt="logo"
-                  priority={true}
-                />
-              </Tab>
             </div>
           </Tab.List>
           <Tab.Panels>
             <Tab.Panel>
               <Review
-                review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu sem enim pellentesque consectetur pellentesque aenean. 
-                    
-                    Viverra tellus non semper quis faucibus duis.consectetur pellentesque aenean. Viverra tellus non semper quis faucibus duis."
+                review="Abhijit and Team Artistry have been as passionate about their services and products as I am about my designs and jewellery. They complement us in many ways, and I’m happy to have used their services in the past couple of years to propel brand ANAND SHAH. My best wishes always to them."
                 name="Carter Lipshutz"
                 signature="shubham raj"
               />
             </Tab.Panel>
             <Tab.Panel>
               <Review
-                review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu sem enim pellentesque consectetur pellentesque aenean. 
-                    
-                    Viverra tellus non semper quis faucibus duis.consectetur pellentesque aenean. Viverra tellus non semper quis faucibus duis."
+                review="We at Renn Studio are sticklers for detail....whether it is jewellery or the experience around it. Artistry helps to elevate this experience with its customized props and visual merchandising elements and we were proud to even showcase them as our service partners at our shows. Glad to have you with us Abhijit in our endeavors!"
                 name="Carter Lipshutz"
                 signature="gulzari raj"
               />
             </Tab.Panel>
             <Tab.Panel>
               <Review
-                review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu sem enim pellentesque consectetur pellentesque aenean. 
-                    
-                    Viverra tellus non semper quis faucibus duis.consectetur pellentesque aenean. Viverra tellus non semper quis faucibus duis."
+                review="Artistry deftly blends classy design aesthetics with functionality in jewellery display & visual merchandising. Their innate understanding &amp; knowledge of display design lends an element of understated elegance & luxury to help highlight the beauty of jewellery, without overpowering it."
                 name="Aryan Lipshutz"
                 signature="aryan singh"
-              />
-            </Tab.Panel>
-            <Tab.Panel>
-              <Review
-                review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu sem enim pellentesque consectetur pellentesque aenean. 
-                    
-                    Viverra tellus non semper quis faucibus duis.consectetur pellentesque aenean. Viverra tellus non semper quis faucibus duis."
-                name="Aryan Lipshutz"
-                signature="kishor singh"
               />
             </Tab.Panel>
           </Tab.Panels>

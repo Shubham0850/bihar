@@ -44,6 +44,11 @@
 
     &__close {
         width: fit-content;
+        position: absolute;
+        right: 34px;
+        /* top: 0; */
+        /* bottom: 0; */
+        margin: auto;
     }
     &__links {
         width: fit-content;

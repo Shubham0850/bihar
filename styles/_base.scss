@@ -178,6 +178,9 @@ a {
     color: #fff;
     margin-top: 15px;
     cursor: pointer;
+    &:hover{
+       background: #808080; 
+    }
 
     &--sec {
         background: linear-gradient(285.34deg, #000000 17.89%, #343434 121.57%);

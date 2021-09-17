@@ -64,13 +64,15 @@
 .tab-menu-box {
     width: 40%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 .tab-menu {
     border: none;
     outline: none;
     width: 80px;
+    height: 80px;
+    margin-left: 40px;
     background: white;
     cursor: pointer;
     opacity: 0.5;

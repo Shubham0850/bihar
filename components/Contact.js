@@ -57,7 +57,7 @@ export default function Contact() {
   };
 
   return (
-    <div id="contact" className="contact">
+    <div id="connect" className="contact">
       <div className="contact__box">
         <div className="contact__heading">
           <h1 className="h1">{`Let's Connect`}</h1>
@@ -113,7 +113,6 @@ export default function Contact() {
                 onChange={(e) => {
                   handleChange(e);
                 }}
-                required
               />
               <button className="btn" type="submit" disabled={isLoading}>
                 {isLoading ? "Loading..." : success ? "Submitted" : "Submit"}

@@ -32,15 +32,7 @@ export default function Footer() {
             <p className="footer__p">sales@artistryinc.in</p>
           </a>
           <br />
-          
-          <div className="footer__details__social">
-            <a href="#" className="footer__details__contact__icon">
-              <Image src="/fb.png" alt="fb icon" width={45} height={45} />
-            </a>
-            <a href="#" className="footer__details__contact__icon">
-              <Image src="/ig.png" alt="ig icon" width={45} height={45} />
-            </a>
-          </div>
+        
         </div>
         <div className="footer__details__gallery">
           <div className="footer__details__gallery-box">

@@ -9,6 +9,19 @@ export default function SideNav({ setToggle }) {
       <div className="side-nav__rotate">
         <div className="side-nav__links-box">
           <div className="side-nav__links">
+            <Link href="#connect">
+              <span
+                className={
+                  router.asPath == "/#connect"
+                    ? "side-nav__link side-nav__active"
+                    : "side-nav__link"
+                }
+              >
+                <h3 className="h1 side-nav__h3">Lets connect</h3>
+                <h4 className="h2 side-nav__h4">Contact</h4>
+              </span>
+            </Link>
+
             <Link href="#what-they-say">
               <span
                 className={
@@ -17,21 +30,8 @@ export default function SideNav({ setToggle }) {
                     : "side-nav__link"
                 }
               >
-                <h3 className="h1 side-nav__h3">What They Say</h3>
-                <h4 className="h2 side-nav__h4">Brand Video</h4>
-              </span>
-            </Link>
-
-            <Link href="#what-we-do">
-              <span
-                className={
-                  router.asPath == "/#what-we-do"
-                    ? "side-nav__link side-nav__active"
-                    : "side-nav__link"
-                }
-              >
-                <h3 className="h1 side-nav__h3">What We Do</h3>
-                <h4 className="h2 side-nav__h4">Brand Video</h4>
+                <h3 className="h1 side-nav__h3">What they say</h3>
+                <h4 className="h2 side-nav__h4">Success story</h4>
               </span>
             </Link>
 
@@ -44,7 +44,7 @@ export default function SideNav({ setToggle }) {
                 }
               >
                 <h3 className="h1 side-nav__h3">How We Do</h3>
-                <h4 className="h2 side-nav__h4">Brand Video</h4>
+                <h4 className="h2 side-nav__h4">Process</h4>
               </span>
             </Link>
 
@@ -56,7 +56,7 @@ export default function SideNav({ setToggle }) {
                     : "side-nav__link"
                 }
               >
-                <h3 className="h1 side-nav__h3">What They Say</h3>
+                <h3 className="h1 side-nav__h3">What we are</h3>
                 <h4 className="h2 side-nav__h4">Brand Video</h4>
               </span>
             </Link>
