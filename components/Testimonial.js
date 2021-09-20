@@ -13,7 +13,7 @@ function Review(props) {
       </div>
       <div className="testimonial__review__img">
         <Image
-          src="/images/testimonial.jpeg"
+          src={props.imgSrc}
           width={983}
           height={655}
           alt="testimonial"
@@ -82,6 +82,7 @@ export default function Testimonial() {
                 review="Abhijit and Team Artistry have been as passionate about their services and products as I am about my designs and jewellery. They complement us in many ways, and I’m happy to have used their services in the past couple of years to propel brand ANAND SHAH. My best wishes always to them."
                 name="Carter Lipshutz"
                 signature="shubham raj"
+                imgSrc={"/images/t1.jpg"}
               />
             </Tab.Panel>
             <Tab.Panel>
@@ -89,6 +90,7 @@ export default function Testimonial() {
                 review="We at Renn Studio are sticklers for detail....whether it is jewellery or the experience around it. Artistry helps to elevate this experience with its customized props and visual merchandising elements and we were proud to even showcase them as our service partners at our shows. Glad to have you with us Abhijit in our endeavors!"
                 name="Carter Lipshutz"
                 signature="gulzari raj"
+                imgSrc={"/images/t2.jpg"}
               />
             </Tab.Panel>
             <Tab.Panel>
@@ -96,6 +98,7 @@ export default function Testimonial() {
                 review="Artistry deftly blends classy design aesthetics with functionality in jewellery display & visual merchandising. Their innate understanding &amp; knowledge of display design lends an element of understated elegance & luxury to help highlight the beauty of jewellery, without overpowering it."
                 name="Aryan Lipshutz"
                 signature="aryan singh"
+                imgSrc={"/images/t3.jpg"}
               />
             </Tab.Panel>
           </Tab.Panels>
