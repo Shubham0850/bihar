@@ -60,7 +60,7 @@ export default function Contact() {
     <div id="connect" className="contact">
       <div className="contact__box">
         <div className="contact__heading">
-          <h1 className="h1">{`Let's Connect`}</h1>
+          <h1 className="h1">{`Let's Talk`}</h1>
           <h2 className="h2">Contact</h2>
         </div>
         <div className="contact__form-box">

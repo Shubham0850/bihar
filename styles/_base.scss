@@ -1,3 +1,10 @@
+:root{
+    --white:#ffffff;
+    --black:#000000;
+    --dark:#111111;
+    --golden: #D0AB82;
+    --container: calc(100% - 180px);
+}
 *,
 *::before,
 *::after {
@@ -110,6 +117,10 @@ body {
 //////
 
 @media screen and (max-width: 600px) {
+
+    :root{
+        --container: calc(100% - 64px);
+    }
     .h1 {
         font-size: 30px;
     }

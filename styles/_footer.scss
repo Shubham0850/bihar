@@ -2,9 +2,7 @@
     width: 100%;
     height: auto;
     padding: 50px 0;
-    background-color: #000;
-
-    border-top: 1px solid #4d4d4d;
+    background-color: #111111;
 
     &__h3 {
         font-family: $font-tertiary;
@@ -34,7 +32,7 @@
     &__details {
         display: flex;
         justify-content: space-between;
-        width: calc(100% - 180px);
+        width: var(--container);
         margin:0 auto;
 
         &__contact {
@@ -66,7 +64,7 @@
     &__links {
         display: flex;
         margin-top: 90px;
-        width: calc(100% - 180px);
+        width: var(--container);
         margin:0 auto;
         &__copy-right {
             margin-right: 50px;
