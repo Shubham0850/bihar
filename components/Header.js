@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Tab } from "@headlessui/react";
 import SideNav from "../components/SideNav";
+import { Fade} from "react-reveal";
 
 function VideoPopUp() {
   return (
@@ -45,10 +46,12 @@ export default function Header() {
       {isSidebarOpen && (
         <SideNav toggle={isSidebarOpen} setToggle={setSidebar} />
       )}
-      <a href="#side-nav" id="scrollBar"></a>
+      <a href="#side-nav" id="scrollBar" onMouseEnter={() => {
+            setSidebar(true);
+          }}></a>
       <nav className="nav">
         <span
-          onClick={() => {
+          onMouseEnter={() => {
             setSidebar(true);
           }}
         >
@@ -59,7 +62,7 @@ export default function Header() {
           <Image src="/logo.png" width={151} height={92} alt="artistry logo" />
         </div>
 
-        <Link href="#contact">
+        <Link href="#connect">
           <p className="p">{"Let's Talk"}</p>
         </Link>
       </nav>
@@ -114,28 +117,34 @@ export default function Header() {
                   <p className="p"></p>
                 </Tab>
               </Tab.List>
-              <Link href="#how-we-do">
-                <p className="p scroll-text">Scroll down to see more</p>
-              </Link>
+              
             </div>
+            <Link href="#how-we-do"><span className="scroll-text">Scroll down to see more</span></Link>
+
             <Tab.Panels className="header__tab">
               <Tab.Panel className="header__text-animation">
+              <Fade big>
                 <h1 className="h1">
                   <span>JEWELRY</span> <span>DISPLAY</span>
                 </h1>
                 <h2 className="h2">Tailor Made</h2>
+              </Fade>
               </Tab.Panel>
               <Tab.Panel className="header__text-animation">
+              <Fade big>
                 <h1 className="h1">
-                  <span>JEWELRY</span> <span>DISPLAY2</span>
+                  <span>JEWELRY</span> <span>DISPLAY</span>
                 </h1>
                 <h2 className="h2">Tailor Made</h2>
+              </Fade>
               </Tab.Panel>
               <Tab.Panel className="header__text-animation">
+              <Fade big>
                 <h1 className="h1">
-                  <span>JEWELRY</span> <span>DISPLAY3</span>
+                  <span>JEWELRY</span> <span>DISPLAY</span>
                 </h1>
                 <h2 className="h2">Tailor Made</h2>
+              </Fade>
               </Tab.Panel>
             </Tab.Panels>
           </div>

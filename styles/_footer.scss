@@ -1,9 +1,8 @@
 .footer {
     width: 100%;
     height: auto;
-    padding: 50px 0;
     background-color: #111111;
-
+    padding:64px 0;
     &__h3 {
         font-family: $font-tertiary;
         font-style: normal;
@@ -13,11 +12,6 @@
         color: #bdbdbd;
     }
     &__p {
-        font-family: $font-tertiary;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
         color: #bdbdbd;
     }
     &__link {
@@ -92,7 +86,6 @@
 
 @media screen and (max-width: 600px) {
     .footer {
-        padding: 30px;
         &__details {
             flex-direction: column;
             &__contact {
@@ -104,7 +97,7 @@
                 margin-bottom: 50px;
 
                 &__img {
-                    width: 48%;
+                    width: 46%;
                 }
             }
             &__gallery-box {

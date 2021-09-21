@@ -8,12 +8,12 @@ config({ ssrFadeout: true });
 export default function HowWeDo() {
   return (
     <section id="how-we-do" className="whatwedo">
-      <Slide left>
+      <Fade big>
         <div className="whatwedo__heading">
           <h1 className="h1">How We Do</h1>
           <h2 className="h2">Processes</h2>
         </div>
-      </Slide>
+      </Fade>
 
       <Fade bottom cascade>
         <div className="whatewedo__img f1">
@@ -120,8 +120,9 @@ export default function HowWeDo() {
         </div>
       </Fade>
 
-      <Flip left>
+      
         <div className="whatwedo__list">
+        <Fade big cascade>
           <ul>
             <li>
               <p className="p">3D printing</p>
@@ -139,8 +140,9 @@ export default function HowWeDo() {
               <p className="p">Fibrecasting</p>
             </li>
           </ul>
+          </Fade>
         </div>
-      </Flip>
+      
     </section>
   );
 }

@@ -5,7 +5,9 @@ import { useRouter } from "next/router";
 export default function SideNav({ setToggle }) {
   const router = useRouter();
   return (
-    <nav className="side-nav" id="side-nav">
+    <nav className="side-nav" id="side-nav" onMouseLeave={() => {
+      setToggle(false);
+    }}>
       <div className="side-nav__rotate">
         <div className="side-nav__links-box">
           <div className="side-nav__links">
@@ -56,7 +58,7 @@ export default function SideNav({ setToggle }) {
                     : "side-nav__link"
                 }
               >
-                <h3 className="h1 side-nav__h3">What we are</h3>
+                <h3 className="h1 side-nav__h3">Who we are</h3>
                 <h4 className="h2 side-nav__h4">Brand Video</h4>
               </span>
             </Link>

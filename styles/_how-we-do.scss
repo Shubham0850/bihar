@@ -70,6 +70,11 @@
 }
 
 @media screen and (max-width: 600px) {
+
+    .whatwedo__list li p{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
     .f1 {
         grid-column: 1 / 9;
         grid-row: 1 / 5;

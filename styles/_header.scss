@@ -8,6 +8,35 @@
     cursor: url("/play-cursor.svg"), auto;
     cursor: url("/play-cursor.svg") 15 15, auto;
 }
+
+
+.scroll-text {
+    cursor: pointer;
+    -webkit-animation: blink 3s linear infinite;
+    animation: blink 3s linear infinite;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    width: fit-content;
+    z-index: 1000;
+    display: block;
+    padding: 8px;
+}
+@keyframes blink {
+    0% {
+        opacity: 0.2;
+       }
+       50% {
+        opacity: 1;
+       }
+       100% {
+        opacity: 0.2;
+       }
+}
+
 .header {
     width: 100%;
     height: 100vh;
@@ -74,19 +103,14 @@
     &__active-slider {
         border-bottom: 3px solid white;
     }
-    .scroll-text {
-        text-align: center;
-        cursor: pointer;
-        animation: blink 3s linear infinite;
-    }
-
+    
+    /*
     &__text-animation {
         span {
             color: transparent;
             animation: blur 5s ease-in-out infinite;
             -webkit-animation: blur 5s ease-out infinite;
         }
-
         span:nth-child(1) {
             animation-delay: 0.1s;
             -webkit-animation-delay: 0.1s;
@@ -95,9 +119,8 @@
             animation-delay: 0.2s;
             -webkit-animation-delay: 0.2s;
         }
-
-       
     }
+    */
 }
 
 .popup {
