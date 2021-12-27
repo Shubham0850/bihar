@@ -1,0 +1,90 @@
+.projects {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #000;
+
+    &__details {
+        flex: 0 0 50%;
+        transition: all 0.8s;
+        align-self: center;
+        padding: 50px;
+        
+        
+        .name {
+            font-size: 50px;
+            font-family: $font-primary;
+            margin-bottom: 1rem;
+            @media only screen and (max-width: 600px) {
+                font-size: 3.5rem;
+            }
+        }
+        .short-summery {
+            font-size: 20px;
+            margin-bottom: 2rem;
+            color: #000;
+        }
+        .tech-used {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+       
+    }
+
+    &__img-box{
+        padding: 50px;
+    }
+
+    &__img {
+        width: 100%;
+        transition: all 0.5s;
+        transform: scale(1);
+
+        &:hover {
+            transform: scale(0.98);
+            border-radius: 1rem;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .projects__img-box{
+            border-bottom: 1px solid #000;
+        }
+        .name{
+            font-size: 30px;
+        }
+    }
+}
+
+.row {
+    flex-direction: row;
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+    .projects__img-box{
+        border-right: 1px solid #000;
+    }
+}
+.row-rev {
+    flex-direction: row-reverse;
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+
+    .projects__img-box{
+        border-left: 1px solid #000;
+    }
+}
+.culutre-container{
+    padding-top: 100px;
+    .h1-box{
+        text-align: center;
+        padding: 20px;
+        width: fit-content;
+        margin: 0px auto;
+    }
+}

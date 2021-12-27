@@ -1,5 +1,5 @@
 {
-  "name": "artistry",
+  "name": "bihar",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.4.1",
-    "airtable": "^0.11.1",
+    "@headlessui/react": "^1.4.2",
     "next": "11.1.2",
-    "node-sass": "4.14.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-hover-video-player": "^9.2.0",
-    "react-reveal": "^1.2.2"
+    "react-reveal": "^1.2.2",
+    "sass": "^1.45.1"
   },
   "devDependencies": {
     "eslint": "7.32.0",

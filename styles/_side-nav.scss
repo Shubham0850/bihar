@@ -1,14 +1,9 @@
 .side-nav {
-    background-color: #000;
     width: 100%;
 
-    // position: fixed;
-    // top: 0;
-    // left: -50%;
-    // z-index: 1000;
-    // transform: rotate(-90deg) translateY(48%);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
 
-   
     transform-origin: left top;
     transform: rotate(-90deg) translateX(-100%);
     width: 100vh;
@@ -69,7 +64,7 @@
     }
 
     &__h3 {
-        font-family: $font-tertiary;
+        font-family: $font-primary;
         font-size: 15px;
         line-height: 16px;
         text-transform: capitalize;

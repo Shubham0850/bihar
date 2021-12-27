@@ -7,13 +7,9 @@ function Header() {
       <div className="cat__header-box">
         <Fade bottom>
           <h1 className="h1 h1--dark">
-            <span className="h1--light">We Create</span>
-            <br />
-            Visual Stories <span className="h1--light">For Our</span>
-            <br />
-            Customers <span className="h1--light">Through</span>
+            <span className="h1--light">बिहार में का बा ?</span>
           </h1>
-          <h3 className="h2">Beautiful & Minimal Designs</h3>
+          <h3 className="h2">#proudtobeabihari</h3>
         </Fade>
       </div>
     </div>
@@ -22,7 +18,7 @@ function Header() {
 
 function Card(props) {
   return (
-    <div className="cat__card">
+    <div className="cat__card" id="about">
       <div className="cat__card__img">
         <Image
           src={props.bgImgSrc}
@@ -35,7 +31,6 @@ function Card(props) {
       <div className="cat__card__text">
         <div>
           <h1 className="h1">{props.heading}</h1>
-          <h2 className="h2">{props.subHeading}</h2>
         </div>
       </div>
     </div>
@@ -46,23 +41,21 @@ export default function Category() {
   return (
     <div className="cat" id="what-we-do">
       <Header />
+      <Card bgImgSrc="/images/chhath.jpg" heading="Our Festivals" />
+
       <Card
-        bgImgSrc="/images/cat1.jpeg"
-        heading="bridle"
-        subHeading="Tailor Made"
+        bgImgSrc="/images/budh.jpeg"
+        heading="The Birthplace Of Jainism And Buddhism"
       />
 
       <Card
-        bgImgSrc="/images/cat2.jpeg"
-        heading="IN STORE"
-        subHeading="Tailor Made"
+        bgImgSrc="/images/nalanda.jpg"
+        heading="Houses of The Oldest University"
       />
 
-      <Card
-        bgImgSrc="/images/cat3.jpeg"
-        heading="WINDOW"
-        subHeading="Tailor Made"
-      />
+      <Card bgImgSrc="/images/ias.jpg" heading="The Land Of IAS Officers" />
+
+      <Card bgImgSrc="/images/litti-choka.jpg" heading="Lip-smacking Cuisine" />
     </div>
   );
 }

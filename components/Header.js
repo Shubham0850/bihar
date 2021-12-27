@@ -1,21 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Tab } from "@headlessui/react";
 import SideNav from "../components/SideNav";
-import { Fade} from "react-reveal";
+import { Fade } from "react-reveal";
+import { Tab } from "@headlessui/react";
 
 function VideoPopUp() {
   return (
     <div className="video-popup">
       <video width="100%" controls autoPlay>
-        <source src="/videos/header-bg.mp4" type="video/mp4" />
+        <source src="/videos/banner-video.mp4" type="video/mp4" />
         <p>Your browser does not support HTML video.</p>
       </video>
     </div>
   );
 }
-
 
 export default function Header() {
   const [videoPopup, setVideoPopup] = useState(false);
@@ -39,16 +38,18 @@ export default function Header() {
     }
   }, []);
 
- 
-
   return (
     <div>
       {isSidebarOpen && (
         <SideNav toggle={isSidebarOpen} setToggle={setSidebar} />
       )}
-      <a href="#side-nav" id="scrollBar" onMouseEnter={() => {
-            setSidebar(true);
-          }}></a>
+      <a
+        href="#side-nav"
+        id="scrollBar"
+        onMouseEnter={() => {
+          setSidebar(true);
+        }}
+      ></a>
       <nav className="nav">
         <span
           onMouseEnter={() => {
@@ -59,11 +60,11 @@ export default function Header() {
         </span>
 
         <div className="logo">
-          <Image src="/logo.png" width={151} height={92} alt="artistry logo" />
+          <Image src="/logo.png" width={120} height={100} alt="artistry logo" />
         </div>
 
-        <Link href="#connect">
-          <p className="p">{"Let's Talk"}</p>
+        <Link href="#culture">
+          <p className="p">{"Culture"}</p>
         </Link>
       </nav>
 
@@ -117,34 +118,35 @@ export default function Header() {
                   <p className="p"></p>
                 </Tab>
               </Tab.List>
-              
             </div>
-            <Link href="#how-we-do"><span className="scroll-text">Scroll down to see more</span></Link>
+            <Link href="#how-we-do">
+              <span className="scroll-text">Scroll down to see more</span>
+            </Link>
 
             <Tab.Panels className="header__tab">
               <Tab.Panel className="header__text-animation">
-              <Fade big>
-                <h1 className="h1">
-                  <span>JEWELRY</span> <span>DISPLAY</span>
-                </h1>
-                <h2 className="h2">Tailor Made</h2>
-              </Fade>
+                <Fade big>
+                  <h1 className="h1">
+                    <span>बिहार में आपका स्वागत है</span>
+                  </h1>
+                  <h2 className="h2">#bihari</h2>
+                </Fade>
               </Tab.Panel>
               <Tab.Panel className="header__text-animation">
-              <Fade big>
-                <h1 className="h1">
-                  <span>JEWELRY</span> <span>DISPLAY</span>
-                </h1>
-                <h2 className="h2">Tailor Made</h2>
-              </Fade>
+                <Fade big>
+                  <h1 className="h1">
+                    <span>Welcome to</span> <span>BIHAR</span>
+                  </h1>
+                  <h2 className="h2">Tailor Made</h2>
+                </Fade>
               </Tab.Panel>
               <Tab.Panel className="header__text-animation">
-              <Fade big>
-                <h1 className="h1">
-                  <span>JEWELRY</span> <span>DISPLAY</span>
-                </h1>
-                <h2 className="h2">Tailor Made</h2>
-              </Fade>
+                <Fade big>
+                  <h1 className="h1">
+                    <span>JEWELRY</span> <span>DISPLAY</span>
+                  </h1>
+                  <h2 className="h2">Tailor Made</h2>
+                </Fade>
               </Tab.Panel>
             </Tab.Panels>
           </div>

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect } from "react";
 
 export default function Footer() {
@@ -18,27 +17,27 @@ export default function Footer() {
     });
   }
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer">
       <div className="footer__details">
         <div className="footer__details__contact">
-          <h3 className="footer__h3">Artistry Inc</h3>
+          <h3 className="footer__h3">BIHAR</h3>
           <br />
           <p className="footer__p">
-            506, IJMIMA Complex, Nr. Infinity 2 Mall, Off Link Road, Malad (W),
-            Mumbai 400064, Maharashtra, India
+            {`जन्म मिला जिस मिट्टी पर उस मिट्टी का आभारी हूँ।
+स्वर्ग से सुंदर है बिहार मेरा
+और मैं गर्वित बिहारी हूँ।।`}
           </p>
           <br />
-          <a href="mailto:sales@artistryinc.in">
-            <p className="footer__p">sales@artistryinc.in</p>
+          <a href="mailto:rajshubham0850@gmail.com">
+            <p className="footer__p">rajshubham0850@gmail.com</p>
           </a>
           <br />
-        
         </div>
         <div className="footer__details__gallery">
           <div className="footer__details__gallery-box">
             <span className="footer__details__gallery__img">
               <Image
-                src="/images/footer/1.png"
+                src="/images/ias.jpg"
                 alt="artistry gallery image"
                 width={182}
                 height={124}
@@ -48,7 +47,7 @@ export default function Footer() {
 
             <span className="footer__details__gallery__img">
               <Image
-                src="/images/footer/2.png"
+                src="/images/madhubani.jpg"
                 alt="artistry gallery image"
                 width={182}
                 height={124}
@@ -58,7 +57,7 @@ export default function Footer() {
 
             <span className="footer__details__gallery__img">
               <Image
-                src="/images/footer/3.png"
+                src="/images/chhath.jpg"
                 alt="artistry gallery image"
                 width={182}
                 height={124}
@@ -68,7 +67,7 @@ export default function Footer() {
 
             <span className="footer__details__gallery__img">
               <Image
-                src="/images/footer/4.png"
+                src="/images/budh.jpeg"
                 alt="artistry gallery image"
                 width={182}
                 height={124}
@@ -77,7 +76,7 @@ export default function Footer() {
             </span>
             <span className="footer__details__gallery__img">
               <Image
-                src="/images/footer/5.png"
+                src="/images/nalanda.jpg"
                 alt="artistry gallery image"
                 width={182}
                 height={124}
@@ -87,7 +86,7 @@ export default function Footer() {
 
             <span className="footer__details__gallery__img">
               <Image
-                src="/images/footer/6.png"
+                src="/images/litti.jpg"
                 alt="artistry gallery image"
                 width={182}
                 height={124}
@@ -117,7 +116,12 @@ export default function Footer() {
 
       <div className="footer__links">
         <div className="footer__links__copy-right">
-          <p className="footer__link">Copyright &#169; Artistry Inc. 2015</p>
+          <p className="footer__link">
+            Copyright &#169;{" "}
+            <a href="http://shubhamraj.live/" target="_blank" rel="noreferrer">
+              Shubham Raj
+            </a>
+          </p>
         </div>
       </div>
     </footer>
