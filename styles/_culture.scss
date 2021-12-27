@@ -17,7 +17,7 @@
         
         .name {
             font-size: 50px;
-            font-family: $font-primary;
+            font-family: $font-secondary;
             margin-bottom: 1rem;
             @media only screen and (max-width: 600px) {
                 font-size: 3.5rem;
@@ -55,7 +55,7 @@
             border-bottom: 1px solid #000;
         }
         .name{
-            font-size: 30px;
+            font-size: 40px;
         }
     }
 }
@@ -80,11 +80,21 @@
     }
 }
 .culutre-container{
-    padding-top: 100px;
+    padding-top: 150px;
+    width: 100%;
+
+    background-image: url('/dotted-bg.svg');
+    background-repeat: repeat;
+    background-size: contain;
+
     .h1-box{
         text-align: center;
-        padding: 20px;
+        padding-bottom: 100px;
         width: fit-content;
         margin: 0px auto;
+
+        .h1{
+            font-size: 50px;
+        }
     }
 }

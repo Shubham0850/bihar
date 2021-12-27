@@ -18,13 +18,15 @@ html {
 }
 
 // IMPORT FONTS
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&family=Playfair+Display:wght@500;700&family=Qwitcher+Grypen:wght@700&display=swap');
 
 
 ////////////// VARIABLES
 
 // FONTS
 $font-primary: 'Josefin Sans', sans-serif;
+$font-secondary: 'Playfair Display', serif;
+$font-tertiory: 'Qwitcher Grypen', cursive;
 
 // COLOURS
 $color-primary: "#D0AB82";
@@ -42,7 +44,7 @@ body {
 // Typography
 
 .h1 {
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-style: normal;
     font-size: 60px;
     font-weight: 600;
@@ -58,10 +60,11 @@ body {
     }
 }
 .h2 {
-    font-family: $font-primary;
-    font-size: 40px;
+    font-family: $font-tertiory;
+    font-size: 60px;
+    line-height: 30px;
     font-weight: 400;
-    color: #d0ab82;
+    color: #b19576;
     text-align: right;
 }
 .p, p{
@@ -154,8 +157,8 @@ a {
     color: #fff;
 }
 .btn {
-    width: 100%;
-    padding: 26px 15px;
+    width: fit-content;
+    padding: 20px 25px;
     border: none;
     outline: none;
     font-family: $font-primary;
@@ -163,23 +166,13 @@ a {
     font-weight: 300;
     background-color: transparent;
     border: 1px solid #4f4f4f;
-    color: #fff;
     margin-top: 15px;
+    color: #fff;
     cursor: pointer;
-    &:hover{
-       background: #808080; 
-    }
-
-    &--sec {
-        background: linear-gradient(285.34deg, #000000 17.89%, #343434 121.57%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .icon {
-            margin-right: 10px;
-        }
-    }
+    font-weight: bold;
+   
+    background: linear-gradient(285.34deg, #000000 17.89%, #343434 121.57%);
+ 
 }
 
 .link {

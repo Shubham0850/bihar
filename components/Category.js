@@ -55,7 +55,15 @@ export default function Category() {
 
       <Card bgImgSrc="/images/ias.jpg" heading="The Land Of IAS Officers" />
 
-      <Card bgImgSrc="/images/litti-choka.jpg" heading="Lip-smacking Cuisine" />
+      <Card bgImgSrc="/images/super30.jpg" heading="Place where geniuses are born" />
+
+      <Card bgImgSrc="/images/patna.jpg" heading="The Longest WiFi Lies Here in Panta" />
+
+      <Card bgImgSrc="/images/sikh-guru.webp" heading="Tenth Sikh Guru Was Born Here" />
+
+      <Card bgImgSrc="/images/vaishali.jpg" heading="World’s First Republic Is In Bihar" />
+
+      <Card bgImgSrc="/images/litti.jpg" heading="Lip-smacking Cuisine" />
     </div>
   );
 }

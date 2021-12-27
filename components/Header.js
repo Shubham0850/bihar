@@ -119,7 +119,7 @@ export default function Header() {
                 </Tab>
               </Tab.List>
             </div>
-            <Link href="#how-we-do">
+            <Link href="#culture">
               <span className="scroll-text">Scroll down to see more</span>
             </Link>
 

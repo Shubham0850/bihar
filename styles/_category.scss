@@ -1,11 +1,12 @@
 .cat {
+    background-image: url('/dotted-bg.svg');
+    background-repeat: repeat;
+    background-size: contain;
     &__header {
         width: 100%;
         max-width: 1000px;
         min-height: 60vh;
-        background-image: url('/public/dotted-bg.svg');
-        background-repeat: repeat;
-        background-size: contain;
+      
         margin: 0 auto;
         overflow: hidden;
         position: sticky;
@@ -28,12 +29,12 @@
             padding: 150px 25px;
 
             .h1 {
-                font-size: 35px;
-                line-height: 40px;
+                font-size: 50px;
             }
 
             .h2 {
                 text-align: left;
+                font-size: 50px;
             }
         }
     }
@@ -67,7 +68,9 @@
                 margin-top: -40px;
             }
             .h1 {
-                font-size: 12vw;
+                font-size: 35px;
+                padding: 25px;
+                text-align: center;
             }
         }
 

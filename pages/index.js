@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="home">
       <Head>
-        <title>बिहार</title>
+        <title>BIHAR </title>
         <meta
           name="description"
           content="bihar"
